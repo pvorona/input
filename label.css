@@ -9,19 +9,18 @@
 */
 
 .label {
+  filter: grayscale(0) brightness(1);
   position: absolute;
+  transform: translate(calc(-1 * var(--input-padding-sides)), -75%) scale(0.6);
   left: var(--input-padding-sides);
   bottom: 0;
-
   pointer-events: none;
-
   color: var(--line-color);
   transition-property: transform, filter;
   transition-duration: var(--transition-time);
   /* Filter is GPU accelerated */
-  filter: grayscale(1) brightness(1);
+  /* filter: grayscale(1) brightness(1); */
   transform-origin: 0 0;
-
   will-change: transform, filter;
 }
 
@@ -30,7 +29,7 @@
 .input:not(:placeholder-shown) ~ .label {
   filter: grayscale(0) brightness(0);
   transform:
-    translate(calc(-1 * var(--input-padding-sides)), -60%)
+    translate(calc(-1 * var(--input-padding-sides)), -75%)
     scale(0.6);
 }
 

@@ -38,7 +38,7 @@
 }
 
 .input:active {
-  background-color: hsl(0, 0%, 98%);
+  /*background-color: hsl(0, 0%, 98%);*/
 /*
   background: radial-gradient(circle, var(--c-line) 10%, #FFF ) 50% no-repeat;
   background-size: 900%;
@@ -54,4 +54,17 @@
 
 .input:focus {
   opacity: 1;
+}
+
+
+
+
+
+.input:focus::placeholder {
+  opacity: 0.2;
+}
+
+.input::placeholder {
+  opacity: 1;
+  transition: opacity .3s;
 }
