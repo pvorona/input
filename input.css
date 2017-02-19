@@ -31,14 +31,20 @@
   transition: opacity var(--transition-time);
 }
 
-.valid > .input {
-  border-bottom-color: currentColor;
-  color: var(--c-valid);
-}
-
+.valid > .input,
 .invalid > .input {
   border-bottom-color: currentColor;
-  color: var(--c-invalid);
+  color: currentColor;
+}
+
+.input:active {
+  background-color: hsl(0, 0%, 98%);
+/*
+  background: radial-gradient(circle, var(--c-line) 10%, #FFF ) 50% no-repeat;
+  background-size: 900%;
+  transition: all 0.1s ease-in;*/
+
+  /*background-image: radial-gradient(at bottom, black, grey, transparent, transparent);*/
 }
 
 .input::selection {
