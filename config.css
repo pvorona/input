@@ -1,0 +1,31 @@
+:root {
+  --hue-invalid: 0;
+  /*--hue-valid  :;*/
+
+  --c-text-selected: white;
+  /*--c-text: rgba(0, 0, 0, 0.6);*/
+  --c-text: rgba(0, 0, 0, 1);
+  --c-valid: green;
+  --c-line: rgba(0, 0, 0, 0.25);
+  --c-text-selection: black;
+  --text-error: red;
+
+  --c-invalid: hsl(var(--hue-invalid), 100%, 50%);
+
+  --c-shadow: rgba(0, 0, 0, 0.65);
+
+  --input-padding-sides: .5em;
+
+  --color-background: white;
+
+  --padding-bottom: 2px;
+
+  --overflow-width: 1em;
+
+  --line-height: 1px;
+  --line-height-focused: 2px;
+  --line-color: hsl(30, 100%, 50%);
+  /*--line-color: hsl(0, 0%, 0%);*/
+
+  --transition-time: .3s;
+}

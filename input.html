@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="config.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="overflow.css">
+    <link rel="stylesheet" type="text/css" href="shadow.css">
+    <link rel="stylesheet" type="text/css" href="input.css">
+    <link rel="stylesheet" type="text/css" href="line.css">
+    <link rel="stylesheet" type="text/css" href="label.css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="hint.css">
+  </head>
+  <body>
+    <style>
+      /*
+      Build
+      - Custom properties fallback (PostCSS plugin)
+      - Browser prefixes (PostCSS autoprefixer)
+
+      Support
+      - A11y
+      - background-color: transparent;
+      - Browsers
+      - https://developer.mozilla.org/en-US/docs/Web/CSS/::-ms-clear
+
+      Styles
+      - Scroll shadow
+
+      States:
+      - Default
+      - Valid
+      - Invalid
+      - Disabled
+      - Focused
+
+      Elements:
+      - Label (color, transform)
+      - Input (color, border, opacity)
+      - Line (background-color, scale)
+      - Default Hint (color, opacity)
+      - Error Hint (color, opacity)
+      - Success Hint (color, opacity)
+      - Shadow (scale, opacity)
+      */
+      .c-input {
+        /* Optimize */
+        contain: content;
+
+        /* Hide shadow overflow */
+        overflow: hidden;
+
+        /* Capture shadow rect */
+        padding-bottom: .8em;
+
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        -webkit-touch-callout: none;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .container {
+        position: relative;
+        width: 30ch;
+      }
+
+      .valid {
+        color: var(--c-valid);
+      }
+
+      .invalid {
+        color: var(--c-invalid);
+      }
+
+/*
+      .valid .success {
+        position: absolute;
+        font-size: 0.6em;
+        color: var(--c-valid);
+        pointer-events: none;
+      }
+
+      .invalid .error {
+        position: absolute;
+        font-size: 0.6em;
+        color: var(--text-error);
+        pointer-events: none;
+      }
+*/    </style>
+    <div class='c-input' style='font-size: 125%'>
+      <div class='container'>
+        <!-- <div class='background'></div> -->
+        <input class='input' placeholder=' ' value='disfigurment@gmail.com'>
+        <label class='label'>First Name</label>
+        <label class='hint'>Should be valid email address.</label>
+        <div class='overflow'></div>
+        <div class='line'></div>
+        <!-- <div class='shadow'></div> -->
+      </div>
+    </div>
+    <div class='c-input' style='font-size: 150%'>
+      <div class='container invalid'>
+        <!-- <div class='background'></div> -->
+        <input class='input' placeholder=' ' value='#280170'>
+        <label class='label'>Post Code</label>
+        <label class='hint'>Enter at least 6 characters.</label>
+        <label class='hint error'>Please, check your password.</label>
+        <div class='overflow'></div>
+        <div class='line'></div>
+        <!-- <div class='shadow'></div> -->
+      </div>
+    </div>
+    <div class='c-input' style='font-size: 175%'>
+      <div class='container valid'>
+        <!-- <div class='background'></div> -->
+        <input class='input' placeholder=' ' value='The spectacle before us was indeed sublime.'>
+        <label class='label'>Email</label>
+        <label class='hint'>Enter at least 6 characters.</label>
+        <label class='hint success'>This is valid email address.</label>
+        <div class='overflow'></div>
+        <div class='line'></div>
+        <!-- <div class='shadow'></div> -->
+      </div>
+    </div>
+
+  </body>
+
+</html>

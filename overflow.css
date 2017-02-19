@@ -1,0 +1,24 @@
+.overflow {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  /* 1px fix for retina display */
+  right: calc(var(--input-padding-sides) - 1px);
+  width: var(--overflow-width);
+  bottom: var(--padding-bottom);
+
+  /* Look and feel */
+  /* Use rgba instead of transparent cause of safari bug */
+  /* Usint var function in gradient color causes repaints */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+
+  /* Optimize */
+  will-change: opacity;
+
+  /* Utility */
+  pointer-events: none;
+}
+
+.input:focus ~ .overflow {
+  opacity: 0;
+}

@@ -1,0 +1,23 @@
+.hint {
+  position: absolute;
+  font-size: 0.6em;
+  opacity: 0;
+  transition: opacity var(--transition-time);
+  will-change: opacity;
+  pointer-events: none;
+}
+
+.input:focus ~ .hint,
+  .valid .hint.success,
+.invalid .hint.error {
+  opacity: 1;
+}
+
+.container:not(.invalid) .hint.error,
+.container:not(.valid) .hint.success,
+  .valid .hint.error,
+.invalid .hint.success,
+  .valid .hint:not(.error):not(.success),
+.invalid .hint:not(.error):not(.success) {
+  display: none;
+}

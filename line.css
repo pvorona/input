@@ -1,0 +1,55 @@
+/*
+-- Default
+- Valid
+- Invalid
+- Disabled
+- Focused
+
+- Line (background-color, scale)
+*/
+
+.line {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  /* Structure */
+  width: 100%;
+  height: var(--line-height-focused);
+
+  /* Look and feel */
+  background-color: var(--line-color);
+
+  /* Optimize */
+  will-change: transform, opacity;
+
+  /* Utility / UX */
+  pointer-events: none;
+
+  /* Animation */
+  opacity: 0;
+  transform:
+    translateX(-50%)
+    scaleX(0);
+  transition:
+    transform var(--transition-time),
+    opacity var(--transition-time) cubic-bezier(0.7, 0.65, 0.3, 1);
+}
+
+.input:focus ~ .line {
+  opacity: 1;
+  transition-duration: var(--transition-time);
+  transition-property: transform, opacity;
+  transform:
+    translateX(-50%)
+    scaleX(1);
+}
+
+.valid .line {
+  background-color: var(--c-valid);
+}
+
+.invalid .line {
+  background-color: var(--c-invalid);
+}

@@ -1,0 +1,51 @@
+.input {
+  /* reset */
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: var(--color-background);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  /* structure */
+  width: 100%;
+  padding: 0.7em var(--input-padding-sides) var(--padding-bottom);
+
+  /* look and feel */
+  border-bottom: var(--line-height) solid var(--c-line);
+  caret-color: black;
+
+  /* text */
+  color: var(--c-text);
+  text-rendering: geometricPrecision;
+  opacity: .8;
+
+  /* Optimize */
+  will-change: opacity;
+
+  transition: opacity var(--transition-time);
+}
+
+.valid > .input {
+  border-bottom-color: currentColor;
+  color: var(--c-valid);
+}
+
+.invalid > .input {
+  border-bottom-color: currentColor;
+  color: var(--c-invalid);
+}
+
+.input::selection {
+  color: var(--c-text-selected);
+  background-color: var(--c-text-selection);
+}
+
+.input:focus {
+  opacity: 1;
+}
