@@ -58,10 +58,6 @@
   opacity: 1;
 }
 
-
-
-
-
 .input:focus::placeholder {
   opacity: 0.2;
 }
