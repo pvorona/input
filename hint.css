@@ -2,12 +2,15 @@
   position: absolute;
   font-size: var(--hint-font-size);
   opacity: 0;
-  transition: opacity var(--transition-time);
-  will-change: opacity;
+  transition: opacity var(--transition-time),
+              transform var(--transition-time);
+  will-change: opacity, transform;
   pointer-events: none;
+  transform: translateY(50%);
 }
 
 .input:focus ~ .hint {
+  transform: translateY(0);
   opacity: 1;
 }
 

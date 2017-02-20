@@ -59,14 +59,17 @@
 }
 
 .input:focus::placeholder {
-  /*opacity: 0;*/
-  /*opacity: 0.2;*/
-  transform: translateX(30ch);
+  opacity: .4;
+  /*transform: translate(calc(-1 * var(--input-padding-sides)), 1em) scale(.6);*/
 }
 
 .input::placeholder {
-  /*opacity: 1;*/
-  transition: transform .3s;
-  transform: translateX(0);
-  will-change: transform, opacity;
+  /*transform-origin: 0 100%;*/
+  /*transition: transform var(--transition-time);*/
+  /*transform: translate(0) scale(1);*/
+  /*will-change: transform;*/
+  opacity: 1;
+  will-change: opacity;
+  transition: opacity var(--transition-time);
 }
+
