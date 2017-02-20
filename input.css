@@ -59,10 +59,14 @@
 }
 
 .input:focus::placeholder {
-  opacity: 0.2;
+  /*opacity: 0;*/
+  /*opacity: 0.2;*/
+  transform: translateX(30ch);
 }
 
 .input::placeholder {
-  opacity: 1;
-  transition: opacity .3s;
+  /*opacity: 1;*/
+  transition: transform .3s;
+  transform: translateX(0);
+  will-change: transform, opacity;
 }
