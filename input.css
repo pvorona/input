@@ -31,10 +31,12 @@
   transition: opacity var(--transition-time);
 }
 
-.valid > .input,
-.invalid > .input {
-  border-bottom-color: currentColor;
-  color: currentColor;
+.valid .input {
+  border-bottom-color: var(--c-valid);
+}
+
+.invalid .input {
+  border-bottom-color: var(--c-invalid);
 }
 
 .input:active {
