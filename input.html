@@ -53,9 +53,10 @@
         overflow: hidden;
 
         /* Capture shadow rect */
-        padding-bottom: .8em;
+        padding-bottom: calc(var(--hint-font-size) + var(--line-height));
 
         -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         font-smoothing: antialiased;
         -webkit-touch-callout: none;
         -webkit-overflow-scrolling: touch;

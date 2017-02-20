@@ -1,6 +1,6 @@
 .hint {
   position: absolute;
-  font-size: 0.6em;
+  font-size: var(--hint-font-size);
   opacity: 0;
   transition: opacity var(--transition-time);
   will-change: opacity;

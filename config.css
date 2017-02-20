@@ -28,4 +28,6 @@
   /*--line-color: hsl(0, 0%, 0%);*/
 
   --transition-time: .3s;
+
+  --hint-font-size: .6em;
 }

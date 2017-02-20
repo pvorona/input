@@ -25,17 +25,18 @@
 }
 
 /* Input focused or has text */
-.input:focus ~ .label,
+/*.input:focus ~ .label,
 .input:not(:placeholder-shown) ~ .label {
-  filter: grayscale(0) brightness(0);
   transform:
     translate(calc(-1 * var(--input-padding-sides)), -75%)
     scale(0.6);
 }
+*/
 
 /* Show colored */
 /* Increase specifity for labels with validity */
 .input:focus ~ .label,
+.input:not(:placeholder-shown) ~ .label,
 .valid .label.label,
 .invalid .label.label {
   filter: grayscale(0) brightness(1);
