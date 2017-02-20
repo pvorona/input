@@ -23,12 +23,12 @@
   /* text */
   color: var(--c-text);
   text-rendering: geometricPrecision;
-  opacity: .8;
+  /*opacity: .8;*/
 
   /* Optimize */
-  will-change: opacity;
+  /*will-change: opacity;*/
 
-  transition: opacity var(--transition-time);
+  /*transition: opacity var(--transition-time);*/
 }
 
 .valid .input {
@@ -54,12 +54,12 @@
   background-color: var(--c-text-selection);
 }
 
-.input:focus {
-  opacity: 1;
-}
+/*.input:focus {*/
+  /*opacity: 1;*/
+/*}*/
 
 .input:focus::placeholder {
-  opacity: .4;
+  opacity: 0.4;
   /*transform: translate(calc(-1 * var(--input-padding-sides)), 1em) scale(.6);*/
 }
 
