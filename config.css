@@ -6,7 +6,7 @@
   /*--c-text: rgba(0, 0, 0, 0.6);*/
   --c-text: rgba(0, 0, 0, 1);
   --c-valid: green;
-  --c-line: rgba(0, 0, 0, 0.25);
+  --c-line: rgba(0, 0, 0, 0.1);
   --c-text-selection: black;
   --text-error: red;
 
