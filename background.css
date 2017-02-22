@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--color-background);
+  background-color: var(--overflow-background-color);
   top: 0;
   pointer-events: none;
 }
