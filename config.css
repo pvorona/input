@@ -23,7 +23,7 @@
   --line-color: rgba(0, 0, 0, 0.1);
   --line-color-focused: hsl(30, 100%, 50%);
 
-  --transition-time: .3s;
+  --transition-time: .35s;
 
   --hint-font-size: .6em;
 }
