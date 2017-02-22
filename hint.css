@@ -1,3 +1,6 @@
+/* Todo:
+-  font-size instead of scale
+*/
 .hint {
   position: absolute;
   font-size: var(--hint-font-size);
