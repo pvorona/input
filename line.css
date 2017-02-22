@@ -6,6 +6,8 @@
 - Focused
 
 - Line (background-color, scale)
+Todo:
+- Reimplement grey underline as part of this element (can be GPU optimized, no need to replaint colors)
 */
 
 .line {
