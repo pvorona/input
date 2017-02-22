@@ -21,7 +21,7 @@ Todo:
   height: var(--line-height-focused);
 
   /* Look and feel */
-  background-color: var(--line-color);
+  background-color: var(--line-color-focused);
 
   /* Optimize */
   will-change: transform, opacity;

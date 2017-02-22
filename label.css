@@ -17,7 +17,7 @@ Todo:
   left: var(--input-padding-sides);
   bottom: 0;
   pointer-events: none;
-  color: var(--line-color);
+  color: var(--line-color-focused);
   transition-property: transform, filter;
   transition-duration: var(--transition-time);
   /* Filter is GPU accelerated */

@@ -1,33 +1,27 @@
 :root {
-  --hue-invalid: 0;
-  /*--hue-valid  :;*/
+  --input-placeholder-focused-opacity: .4;
 
-  --c-text-selected: white;
-  /*--c-text: rgba(0, 0, 0, 0.6);*/
-  --c-text: rgba(0, 0, 0, 1);
+  /*--input-text-color: rgba(0, 0, 0, 0.6);*/
+  --input-text-color: rgba(0, 0, 0, 1);
+  --input-text-color-selected: white;
+  --input-text-color-selected-background: black;
+
   --c-valid: green;
-  --c-line: rgba(0, 0, 0, 0.1);
-  --c-text-selection: black;
-  --text-error: red;
-
-  --c-invalid: hsl(var(--hue-invalid), 100%, 50%);
+  --c-invalid: red;
 
   --c-shadow: rgba(0, 0, 0, 0.65);
 
   --input-padding-sides: .5em;
 
-  --color-background: white;
-
   --padding-bottom: 2px;
 
   --overflow-width: 1em;
+  --color-background: white;
 
   --line-height: 1px;
   --line-height-focused: 2px;
-  --line-color: hsl(30, 100%, 50%);
-  /*--line-color: hsl(0, 0%, 0%);*/
-
-  --input-placeholder-focused-opacity: .4;
+  --line-color: rgba(0, 0, 0, 0.1);
+  --line-color-focused: hsl(30, 100%, 50%);
 
   --transition-time: .3s;
 
