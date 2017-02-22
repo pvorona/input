@@ -1,34 +1,23 @@
 .input {
-  /* reset */
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border-top: none;
+  appearance: none;
+  background-color: transparent;
+  border-bottom: var(--line-height) solid var(--c-line);
   border-left: none;
   border-right: none;
-  background-color: transparent;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
-  /* structure */
-  width: 100%;
-  padding: 0.7em var(--input-padding-sides) var(--padding-bottom);
-
-  /* look and feel */
-  border-bottom: var(--line-height) solid var(--c-line);
+  border-top: none;
   caret-color: black;
-
-  /* text */
   color: var(--c-text);
+  outline: none;
+  padding: 0.7em var(--input-padding-sides) var(--padding-bottom);
   text-rendering: geometricPrecision;
-  /*opacity: .8;*/
+  text-size-adjust: 100%;
+  width: 100%;
+}
 
-  /* Optimize */
-  /*will-change: opacity;*/
-
-  /*transition: opacity var(--transition-time);*/
+.input::selection {
+  color: var(--c-text-selected);
+  background-color: var(--c-text-selection);
 }
 
 .valid .input {
@@ -39,35 +28,11 @@
   border-bottom-color: var(--c-invalid);
 }
 
-.input:active {
-  /*background-color: hsl(0, 0%, 98%);*/
-/*
-  background: radial-gradient(circle, var(--c-line) 10%, #FFF ) 50% no-repeat;
-  background-size: 900%;
-  transition: all 0.1s ease-in;*/
-
-  /*background-image: radial-gradient(at bottom, black, grey, transparent, transparent);*/
-}
-
-.input::selection {
-  color: var(--c-text-selected);
-  background-color: var(--c-text-selection);
-}
-
-/*.input:focus {*/
-  /*opacity: 1;*/
-/*}*/
-
 .input:focus::placeholder {
-  opacity: 0.4;
-  /*transform: translate(calc(-1 * var(--input-padding-sides)), 1em) scale(.6);*/
+  opacity: var(--input-placeholder-focused-opacity);
 }
 
 .input::placeholder {
-  /*transform-origin: 0 100%;*/
-  /*transition: transform var(--transition-time);*/
-  /*transform: translate(0) scale(1);*/
-  /*will-change: transform;*/
   opacity: 1;
   will-change: opacity;
   transition: opacity var(--transition-time);

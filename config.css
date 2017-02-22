@@ -27,6 +27,8 @@
   --line-color: hsl(30, 100%, 50%);
   /*--line-color: hsl(0, 0%, 0%);*/
 
+  --input-placeholder-focused-opacity: .4;
+
   --transition-time: .3s;
 
   --hint-font-size: .6em;
