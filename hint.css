@@ -7,15 +7,13 @@
   opacity: 0;
   transition-property: opacity, transform, filter;
   transition-duration: var(--transition-time);
-  will-change: opacity, transform, filter;
+  will-change: opacity, transform;
   pointer-events: none;
   transform: translateY(50%);
-  filter: blur(.5px);
 }
 
 .input:focus ~ .hint {
   transform: translateY(0);
-  filter: blur(0);
   opacity: 1;
 }
 
