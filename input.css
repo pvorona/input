@@ -33,7 +33,8 @@
 }
 
 .input::placeholder {
-  opacity: 1;
+  opacity: .6;
+  color: var(--input-text-color);
   will-change: opacity;
   transition: opacity var(--transition-time);
 }
