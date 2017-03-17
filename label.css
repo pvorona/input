@@ -14,7 +14,6 @@ Todo:
   filter: grayscale(0) brightness(1);
   position: absolute;
   font-size: .6em;
-  left: var(--input-padding-sides);
   top: 0;
   bottom: 0;
   pointer-events: none;
