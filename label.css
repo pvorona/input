@@ -13,8 +13,9 @@ Todo:
 .label {
   filter: grayscale(0) brightness(1);
   position: absolute;
-  transform: translate(calc(-1 * var(--input-padding-sides)), -75%) scale(0.6);
+  font-size: .6em;
   left: var(--input-padding-sides);
+  top: 0;
   bottom: 0;
   pointer-events: none;
   color: var(--line-color-focused);
