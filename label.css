@@ -15,7 +15,6 @@ Todo:
   position: absolute;
   font-size: .6em;
   top: 0;
-  bottom: 0;
   pointer-events: none;
   color: var(--line-color-focused);
   transition-property: transform, filter;
