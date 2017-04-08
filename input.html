@@ -90,59 +90,58 @@
       }
 
    </style>
+    <script>
+      class PvInput extends HTMLElement {
+        connectedCallback () {
+          this.innerHTML = `
+          <div class="c-input">
+            <div class="container">
+              <input
+                class="input"
+                placeholder="${this.getAttribute('placeholder')}"
+                spellcheck="false"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+              >
+              <div class="label">${this.getAttribute('label')}</div>
+              <div class="hint">${this.getAttribute('hint')}</div>
+              <div class="hint error">${this.getAttribute('error')}</div>
+              <div class="hint success">${this.getAttribute('success')}</div>
+              <div class="overflow"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          `
+        }
+      }
+
+      customElements.define('pv-input', PvInput)
+    </script>
+
     <div class="form">
-      <div class="c-input">
-        <div class="container">
-          <input
-            class="input"
-            placeholder="What is your name?"
-            spellcheck="false"
-            autocomplete="off"
-            autocorrect="off"
-            autocapitalize="off"
-          >
-          <div class="label">Full Name</div>
-          <div class="hint">Please, enter your real name.</div>
-          <div class="overflow"></div>
-          <div class="line"></div>
-        </div>
-      </div>
-      <div class="c-input">
-        <div class="container">
-          <input
-            class="input"
-            placeholder="What is your email?"
-            spellcheck="false"
-            autocomplete="off"
-            autocorrect="off"
-            autocapitalize="off"
-          >
-          <div class="label">Email</div>
-          <div class="hint">Should be valid email address.</div>
-          <div class="hint error">Please, check your email.</div>
-          <div class="hint success">This is valid email address.</div>
-          <div class="overflow"></div>
-          <div class="line"></div>
-        </div>
-      </div>
-      <div class="c-input">
-        <div class="container">
-          <input
-            class="input"
-            placeholder="What company are you working on?"
-            spellcheck="false"
-            autocomplete="off"
-            autocorrect="off"
-            autocapitalize="off"
-          >
-          <div class="label">Company</div>
-          <div class="hint">What company are you working on?</div>
-          <div class="hint success">This field is valid.</div>
-          <div class="hint error">Please, enter the title of your organization.</div>
-          <div class="overflow"></div>
-          <div class="line"></div>
-        </div>
-      </div>
+      <pv-input
+        placeholder='What is your name?'
+        label='Full Name'
+        hint='Please, enter your real name.'
+        error='this field is required.'
+        success='This field is valid.'
+      ></pv-input>
+      <pv-input
+        placeholder='What is your email?'
+        label='Email'
+        hint='Should be valid email address.'
+        error='Please, check your email.'
+        success='This is valid email address.'
+      ></pv-input>
+      <pv-input
+        placeholder='What company are you working on?'
+        label='Company'
+        hint='What company are you working on?'
+        error='Please, enter the title of your organization.'
+        success='This field is valid.'
+      ></pv-input>
     </div>
+
   </body>
 </html>

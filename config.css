@@ -1,5 +1,5 @@
 :root {
-  --input-placeholder-focused-opacity: .35;
+  --input-placeholder-focused-opacity: .3;
   --input-text-color: rgba(0, 0, 0, 1);
   --input-text-color-selected: white;
   --input-text-color-selected-background: black;

@@ -22,6 +22,7 @@ Todo:
 
   /* Look and feel */
   background-color: var(--line-color-focused);
+  /*background-image: linear-gradient(to left, hsla(50, 100%, 50%, 1), var(--line-color-focused));*/
 
   /* Utility / UX */
   pointer-events: none;
