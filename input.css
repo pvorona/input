@@ -2,22 +2,22 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   appearance: none;
   background-color: transparent;
-  border-bottom: var(--line-height) solid var(--line-color);
+  border-bottom: var(--pv-input-accent-line-height) solid var(--pv-input-accent-line-color);
   border-left: none;
   border-right: none;
   border-top: none;
   caret-color: black;
-  color: var(--input-text-color);
+  color: var(--pv-input-text-color);
   outline: none;
-  padding: 0.7em var(--input-padding-sides) var(--padding-bottom);
+  padding: 0.7em var(--pv-input-padding-sides) var(--pv-input-padding-bottom);
   text-rendering: geometricPrecision;
   text-size-adjust: 100%;
   width: 100%;
 }
 
 .input::selection {
-  color: var(--input-text-color-selected);
-  background-color: var(--input-text-color-selected-background);
+  color: var(--pv-input-text-color-selected);
+  background-color: var(--pv-input-text-color-selected-background);
 }
 
 .valid .input {
@@ -29,13 +29,13 @@
 }
 
 .input:focus::placeholder {
-  opacity: var(--input-placeholder-focused-opacity);
+  opacity: var(--pv-input-placeholder-opacity-focused);
 }
 
 .input::placeholder {
   opacity: .6;
-  color: var(--input-text-color);
+  color: var(--pv-input-text-color);
   will-change: opacity;
-  transition: opacity var(--transition-time);
+  transition: opacity var(--pv-input-transition-time);
 }
 

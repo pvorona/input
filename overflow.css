@@ -3,9 +3,9 @@
   position: absolute;
   top: 0;
   /* 1px fix for retina display */
-  right: calc(var(--input-padding-sides) - 1px);
-  width: var(--overflow-width);
-  bottom: var(--padding-bottom);
+  right: calc(var(--pv-input-padding-sides) - 1px);
+  width: var(--pv-input-overflow-width);
+  bottom: var(--pv-input-padding-bottom);
 
   /* Look and feel */
   /* Use rgba instead of transparent cause of safari bug */

@@ -18,11 +18,11 @@ Todo:
 
   /* Structure */
   width: 100%;
-  height: var(--line-height-focused);
+  height: var(--pv-input-accent-line-height-focused);
 
   /* Look and feel */
-  background-color: var(--line-color-focused);
-  /*background-image: linear-gradient(to left, hsla(50, 100%, 50%, 1), var(--line-color-focused));*/
+  background-color: var(--pv-input-accent-line-color-focused);
+  /*background-image: linear-gradient(to left, hsla(50, 100%, 50%, 1), var(--pv-input-accent-line-color-focused));*/
 
   /* Utility / UX */
   pointer-events: none;
@@ -32,7 +32,7 @@ Todo:
     translateX(-50%)
     scaleX(0);
   transition:
-    transform var(--transition-time);
+    transform var(--pv-input-transition-time);
 }
 
 .input:focus ~ .line {

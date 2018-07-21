@@ -3,10 +3,10 @@
 */
 .hint {
   position: absolute;
-  font-size: var(--hint-font-size);
+  font-size: var(--pv-input-hint-font-size);
   opacity: 0;
   transition-property: opacity, transform, filter;
-  transition-duration: var(--transition-time);
+  transition-duration: var(--pv-input-transition-time);
   will-change: opacity, transform;
   pointer-events: none;
   transform: translateY(50%);

@@ -1,7 +1,6 @@
 <html><head>
     <!-- <link href="http://db.onlinewebfonts.com/c/02514fa6256f2e5f8223acf684249fe6?family=Maven+Pro+Light" rel="stylesheet" type="text/css"/> -->
-    <link href="http://db.onlinewebfonts.com/c/ef5a32c267adadd7f5ebaa8f89e62b45?family=Maven+Pro+Light" rel="stylesheet" type="text/css">
-
+    <link href="http://db.onlinewebfonts.com/c/ef5a32c267adadd7f5ebaa8f89e62b45?family=Maven+Pro+Light" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:100,200,300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="config.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
@@ -15,6 +14,41 @@
   </head>
   <body>
     <style>
+      :root {
+          --button-color: hsla(30, 100%, 75%, 1);
+          --button-color-hover: hsla(30, 100%, 60%, 1);
+          --button-color-transition-duration: .1s;
+          --button-color-shadow-hover: rgba(128, 128, 128, 0.1);
+      }
+
+      .button {
+          color: var(--button-color);
+          -webkit-appearance: none;
+          border: 1px solid currentColor;
+          border-radius: 1em;
+          background-color: transparent;
+          padding: .5em 1em;
+          box-sizing: border-box;
+          outline: none;
+          cursor: pointer;
+          transition-property: color, box-shadow;
+          transition-duration: var(--button-color-transition-duration);
+          user-select: none;
+          font-size: 16px;
+          font-weight: 600;
+      }
+
+      .button:hover,
+      .button:focus {
+          color: var(--button-color-hover);
+          box-shadow: 0 0 1em var(--button-color-shadow-hover);
+      }
+
+      .button:active {
+          box-shadow: 0 0 .5em var(--button-color-shadow-hover);
+      }
+
+
       /*
       ToDo
       - :invalid styles
@@ -67,7 +101,7 @@
         overflow: hidden;
 
         /* Capture shadow rect */
-        padding-bottom: calc(var(--hint-font-size) + var(--line-height) + 20px);
+        padding-bottom: calc(var(--pv-input-hint-font-size) + var(--pv-input-accent-line-height) + 20px);
 
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -88,6 +122,17 @@
       .invalid {
         color: var(--c-invalid);
       }
+
+      .background {
+        background-image: linear-gradient(to right, hsla(0, 50%, 50%, 0.66), hsla(236, 50%, 50%, 0.66));
+        background-repeat: no-repeat;
+        height: 800px;
+        transform: skewy(-30deg) translateY(-300px);
+
+        height: 1200px;
+        transform: skewy(-30deg) translateY(-600px);
+      }
+
 
    </style>
     <script>
@@ -118,7 +163,7 @@
 
       customElements.define('pv-input', PvInput)
     </script>
-
+    <div class="background"></div>
     <div class="form">
       <pv-input
         placeholder='What is your name?'
@@ -141,7 +186,11 @@
         error='Please, enter the title of your organization.'
         success='This field is valid.'
       ></pv-input>
+      <button
+        class="button"
+        style="font-size: 22px; margin-left: 170px;"
+      >Subscribe
+      </button>
     </div>
-
   </body>
 </html>

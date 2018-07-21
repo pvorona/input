@@ -1,27 +1,24 @@
 :root {
-  --input-placeholder-focused-opacity: .3;
-  --input-text-color: rgba(0, 0, 0, 1);
-  --input-text-color-selected: white;
-  --input-text-color-selected-background: black;
+  --pv-input-placeholder-opacity-focused: .3;
+  --pv-input-text-color: rgba(0, 0, 0, 1);
+  --pv-input-text-color-selected: white;
+  --pv-input-text-color-selected-background: black;
+
+  --pv-input-padding-sides: .5em;
+  --pv-input-padding-bottom: 2px;
+
+  --pv-input-accent-line-height: 1px;
+  --pv-input-accent-line-height-focused: 2px;
+  --pv-input-accent-line-color: rgba(0, 0, 0, 0.1);
+  --pv-input-accent-line-color-focused: hsl(30, 100%, 50%);
+
+  --pv-input-overflow-width: 1em;
+  --pv-input-overflow-background-color: white;
+
+  --pv-input-transition-time: .35s;
+
+  --pv-input-hint-font-size: .6em;
 
   --c-valid: green;
   --c-invalid: red;
-
-  --c-shadow: rgba(0, 0, 0, 0.65);
-
-  --input-padding-sides: .5em;
-
-  --padding-bottom: 2px;
-
-  --overflow-width: 1em;
-  --overflow-background-color: white;
-
-  --line-height: 1px;
-  --line-height-focused: 2px;
-  --line-color: rgba(0, 0, 0, 0.1);
-  --line-color-focused: hsl(30, 100%, 50%);
-
-  --transition-time: .35s;
-
-  --hint-font-size: .6em;
 }
