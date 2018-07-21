@@ -1,7 +1,7 @@
 <html><head>
     <!-- <link href="http://db.onlinewebfonts.com/c/02514fa6256f2e5f8223acf684249fe6?family=Maven+Pro+Light" rel="stylesheet" type="text/css"/> -->
     <link href="http://db.onlinewebfonts.com/c/ef5a32c267adadd7f5ebaa8f89e62b45?family=Maven+Pro+Light" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:100,200,300,400" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:100,200,300,400" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="config.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="overflow.css">
@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="label.css">
     <link rel="stylesheet" type="text/css" href="background.css">
     <link rel="stylesheet" type="text/css" href="hint.css">
+
+    <script type="text/javascript" src="./input.js"></script>
   </head>
   <body>
     <style>
@@ -132,37 +134,8 @@
         height: 1200px;
         transform: skewy(-30deg) translateY(-600px);
       }
-
-
    </style>
-    <script>
-      class PvInput extends HTMLElement {
-        connectedCallback () {
-          this.innerHTML = `
-          <div class="c-input">
-            <div class="container">
-              <input
-                class="pv-input"
-                placeholder="${this.getAttribute('placeholder')}"
-                spellcheck="false"
-                autocomplete="off"
-                autocorrect="off"
-                autocapitalize="off"
-              >
-              <div class="pv-input__label">${this.getAttribute('label')}</div>
-              <div class="pv-input__hint">${this.getAttribute('hint')}</div>
-              <div class="pv-input__hint error">${this.getAttribute('error')}</div>
-              <div class="pv-input__hint success">${this.getAttribute('success')}</div>
-              <div class="pv-input__overflow"></div>
-              <div class="pv-input__accent-line"></div>
-            </div>
-          </div>
-          `
-        }
-      }
 
-      customElements.define('pv-input', PvInput)
-    </script>
     <div class="background"></div>
     <div class="form">
       <pv-input
@@ -171,6 +144,7 @@
         hint='Please, enter your real name.'
         error='this field is required.'
         success='This field is valid.'
+        autofocus
       ></pv-input>
       <pv-input
         placeholder='What is your email?'
