@@ -1,7 +1,4 @@
-/* Todo:
--  font-size instead of scale
-*/
-.hint {
+.pv-input__hint {
   position: absolute;
   font-size: var(--pv-input-hint-font-size);
   opacity: 0;
@@ -12,16 +9,16 @@
   transform: translateY(50%);
 }
 
-.input:focus ~ .hint {
+.pv-input:focus ~ .pv-input__hint {
   transform: translateY(0);
   opacity: 1;
 }
 
-.container:not(.invalid) .hint.error,
-.container:not(.valid) .hint.success,
-  .valid .hint.error,
-.invalid .hint.success,
-  .valid .hint:not(.error):not(.success),
-.invalid .hint:not(.error):not(.success) {
+.container:not(.invalid) .pv-input__hint.error,
+.container:not(.valid) .pv-input__hint.success,
+  .valid .pv-input__hint.error,
+.invalid .pv-input__hint.success,
+  .valid .pv-input__hint:not(.error):not(.success),
+.invalid .pv-input__hint:not(.error):not(.success) {
   display: none;
 }

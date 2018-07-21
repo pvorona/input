@@ -1,4 +1,4 @@
-.input {
+.pv-input {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   appearance: none;
   background-color: transparent;
@@ -15,24 +15,24 @@
   width: 100%;
 }
 
-.input::selection {
+.pv-input::selection {
   color: var(--pv-input-text-color-selected);
   background-color: var(--pv-input-text-color-selected-background);
 }
 
-.valid .input {
+.valid .pv-input {
   border-bottom-color: var(--c-valid);
 }
 
-.invalid .input {
+.invalid .pv-input {
   border-bottom-color: var(--c-invalid);
 }
 
-.input:focus::placeholder {
+.pv-input:focus::placeholder {
   opacity: var(--pv-input-placeholder-opacity-focused);
 }
 
-.input::placeholder {
+.pv-input::placeholder {
   opacity: .6;
   color: var(--pv-input-text-color);
   will-change: opacity;

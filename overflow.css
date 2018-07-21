@@ -1,4 +1,4 @@
-.overflow {
+.pv-input__overflow {
   /* Positioning */
   position: absolute;
   top: 0;
@@ -19,6 +19,6 @@
   pointer-events: none;
 }
 
-.input:focus ~ .overflow {
+.pv-input:focus ~ .pv-input__overflow {
   opacity: 0;
 }

@@ -10,7 +10,7 @@ Todo:
 - font-size instead of scale
 */
 
-.label {
+.pv-input__label {
   filter: grayscale(0) brightness(1);
   position: absolute;
   font-size: .6em;
@@ -26,8 +26,8 @@ Todo:
 }
 
 /* Input focused or has text */
-/*.input:focus ~ .label,
-.input:not(:placeholder-shown) ~ .label {
+/*.pv-input:focus ~ .pv-input__label,
+.pv-input:not(:placeholder-shown) ~ .pv-input__label {
   transform:
     translate(calc(-1 * var(--pv-input-padding-sides)), -75%)
     scale(0.6);
@@ -36,17 +36,17 @@ Todo:
 
 /* Show colored */
 /* Increase specifity for labels with validity */
-.input:focus ~ .label,
-.input:not(:placeholder-shown) ~ .label,
-.valid .label.label,
-.invalid .label.label {
+.pv-input:focus ~ .pv-input__label,
+.pv-input:not(:placeholder-shown) ~ .pv-input__label,
+.valid .pv-input__label.pv-input__label,
+.invalid .pv-input__label.pv-input__label {
   filter: grayscale(0) brightness(1);
 }
 
-.valid .label {
+.valid .pv-input__label {
   color: var(--c-valid);
 }
 
-.invalid .label {
+.invalid .pv-input__label {
   color: var(--c-invalid);
 }

@@ -10,7 +10,7 @@ Todo:
 - Reimplement grey underline as part of this element (can be GPU optimized, no need to replaint colors)
 */
 
-.line {
+.pv-input__accent-line {
   /* Positioning */
   position: absolute;
   bottom: 0;
@@ -35,16 +35,16 @@ Todo:
     transform var(--pv-input-transition-time);
 }
 
-.input:focus ~ .line {
+.pv-input:focus ~ .pv-input__accent-line {
   transform:
     translateX(-50%)
     scaleX(1);
 }
 
-.valid .line {
+.valid .pv-input__accent-line {
   background-color: var(--c-valid);
 }
 
-.invalid .line {
+.invalid .pv-input__accent-line {
   background-color: var(--c-invalid);
 }
