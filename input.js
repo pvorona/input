@@ -10,7 +10,7 @@ class PvInput extends HTMLElement {
           autocomplete="off"
           autocorrect="off"
           autocapitalize="off"
-          autofocus="${this.getAttribute('autofocus') || false}"
+          ${this.getAttribute('autofocus') ? 'autofocus' : ''}
         >
         <div class="pv-input__label">${this.getAttribute('label')}</div>
         <div class="pv-input__hint">${this.getAttribute('hint')}</div>

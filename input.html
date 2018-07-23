@@ -125,14 +125,28 @@
         color: var(--c-invalid);
       }
 
+      @keyframes background-fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
       .background {
         background-image: linear-gradient(to right, hsla(0, 50%, 50%, 0.66), hsla(236, 50%, 50%, 0.66));
+        background-image: linear-gradient(to right, hsla(0, 50%, 50%, .8), hsla(0, 50%, 50%, 0.66));
+        background-image: linear-gradient(to right, hsla(0, 50%, 50%, .8), #FCB5B5);
         background-repeat: no-repeat;
-        height: 800px;
-        transform: skewy(-30deg) translateY(-300px);
+        height: 600px;
+        transform: skewy(-30deg) translateY(0px);
 
-        height: 1200px;
-        transform: skewy(-30deg) translateY(-600px);
+        /*height: 1200px;*/
+        /*transform: skewy(-30deg) translateY(-600px);*/
+
+        /*animation: background-fade-in .5s;*/
+      }
+
+      body {
+        overflow: hidden;
+        /*background-color: #cc7979;*/
       }
    </style>
 
