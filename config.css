@@ -1,8 +1,9 @@
 :root {
-  --pv-input-placeholder-opacity-focused: .3;
   --pv-input-text-color: rgba(0, 0, 0, 1);
   --pv-input-text-color-selected: white;
   --pv-input-text-color-selected-background: black;
+
+  --pv-input-placeholder-opacity-focused: .3;
 
   --pv-input-padding-sides: .5em;
   --pv-input-padding-bottom: 2px;

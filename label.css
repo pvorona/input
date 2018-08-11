@@ -6,11 +6,10 @@
 - Focused
 
 - Label (color, translate, scale)
-Todo:
-- font-size instead of scale
 */
 
 .pv-input__label {
+  /* Filter is GPU accelerated */
   filter: grayscale(0) brightness(1);
   position: absolute;
   font-size: .6em;
@@ -19,20 +18,9 @@ Todo:
   color: var(--pv-input-accent-line-color-focused);
   transition-property: transform, filter;
   transition-duration: var(--pv-input-transition-time);
-  /* Filter is GPU accelerated */
-  /* filter: grayscale(1) brightness(1); */
   transform-origin: 0 0;
   will-change: transform, filter;
 }
-
-/* Input focused or has text */
-/*.pv-input:focus ~ .pv-input__label,
-.pv-input:not(:placeholder-shown) ~ .pv-input__label {
-  transform:
-    translate(calc(-1 * var(--pv-input-padding-sides)), -75%)
-    scale(0.6);
-}
-*/
 
 /* Show colored */
 /* Increase specifity for labels with validity */
