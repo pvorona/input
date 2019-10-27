@@ -24,12 +24,15 @@
       }
 
       .button {
-          color: var(--button-color);
+          background: linear-gradient(122deg, hsla(16, 100%, 69%, 1) 0%, hsla(45, 93%, 62%, 1) 100%);
+          letter-spacing: 1px;
+          margin-top: 16px;
+          color: white;
+
           -webkit-appearance: none;
           border: 1px solid currentColor;
           border-radius: 1em;
-          background-color: transparent;
-          padding: .5em 1em;
+          padding: .5em 1.5em;
           box-sizing: border-box;
           outline: none;
           cursor: pointer;
@@ -124,6 +127,8 @@
       }
 
       .background {
+        display: none;
+
         background-image: linear-gradient(to right, hsla(0, 50%, 50%, 0.66), hsla(236, 50%, 50%, 0.66));
         background-image: linear-gradient(to right, hsla(0, 50%, 50%, .8), hsla(0, 50%, 50%, 0.66));
         background-image: linear-gradient(to right, hsla(0, 50%, 50%, .8), #FCB5B5);
